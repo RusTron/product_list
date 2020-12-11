@@ -1,0 +1,60 @@
+.list {
+  padding-top: 100px;
+
+  &__title{
+    padding-bottom: 50px;
+    font-size: 32px;
+    color: #33c9f3;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+
+    & > span {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 8px 16px;
+      width: 100px;
+    }
+
+    & :first-child {
+      width: 30px;
+    }
+  }
+
+  &__empty {
+    padding-top: 10px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+
+  & > span, & > button {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 8px 16px;
+    width: 100px;
+    box-sizing: content-box;
+    background-color: azure;
+    outline: none;
+  }
+
+  & > button {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(117, 196, 199);
+    }
+
+    &:active {
+      background-color: rgb(134, 156, 156)
+    }
+  }
+
+  & :first-child {
+    width: 30px;
+  }
+}
